@@ -347,7 +347,6 @@ img {
     border-radius: 10px;
     background: transparent;
     overflow: hidden;
-
 }
 
 .btn-big::before {
@@ -453,4 +452,28 @@ img {
 .get-started__button>a:hover {
     background: #FFFFFF;
     color: #565F82;
+}
+
+.ticker {
+    position: relative;
+    width: 300px;
+    height: 35px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.ticker>p {
+    position: absolute;
+    width: 2000px;
+    animation: ticker 30s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(320px);
+    }
+    100% {
+        transform: translateX(-2000px);
+    }
 }
