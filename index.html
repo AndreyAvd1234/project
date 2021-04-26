@@ -15,13 +15,13 @@
             <div class="header-content__left">
                 <div class="logo"><a href="#"></a></div>
                 <nav>
-                    <div class="menu-burger"></div>
-                    <ul class="menu menu-none">
+                    <div id="menu-burger" class="menu-burger"></div>
+                    <ul id="menu" class="menu menu-none">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#slider">Blog</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#calculator">Pricing</a></li>
+                        <li><a href="#footer">Get started</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,62 +32,125 @@
                     <a href="#"><img src="images/heider/twitter.png" alt="Twitter"></a>
                     <a href="#"><img src="images/heider/Medium_icon.png" alt="Medium"></a>
                 </div>
-                <div class="started-button">
-                    <a href="#">Get Started</a>
+                <div>
+                    <button class="started-button" id="buttonSignIn">Sign in</button>
                 </div>
             </div>
         </div>
     </header>
-    <main class="features-wrap">
-        <div class="features-content">
-            <a href="#">about us</a>
-            <h2><a href="#">Read about our app</a></h2>
-
-            <div class="features">
-                <div class="overview">
-                    <p class="features-icon"> <a href="#"><img src="images/heider/overview.png" alt="Overview"></a></p>
-
-                    <h5><a href="#">Overview</a></h5>
-                    <p class="fetures-text"><a href="#">Brute laoreet efficiendi id his, ea illum nonumes luptatum
-                            pro.</a></p>
-                </div>
-                <div class="files">
-                    <p class="features-icon"><a href="#"> <img src="images/heider/Group 39.png" alt="Files"></a></p>
-
-                    <h5><a href="#">Files</a></h5>
-                    <p class="fetures-text"><a href="#">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum
-                            conceptam ex
-                            has.</a>
-                    </p>
-                </div>
-                <div class="meeting">
-                    <p class="features-icon"><a href="#"> <img src="images/heider/Group 40.png" alt="Meeting chats"></a>
-                    </p>
-
-                    <h5><a href="#">Meeting chats</a></h5>
-                    <p class="fetures-text"><a href="#">Vim ne tacimates neglegentur. Erat diceret omittam at est.</a>
-                    </p>
-                </div>
-                <div class="save">
-                    <p class="features-icon"><a href="#"> <img src="images/heider/Group 41.png" alt="Save events"></a>
-
-                    <h5><a href="#">Save events</a></h5>
-                    <p class="fetures-text"><a href="#">Nisl idque mel ea, nominati voluptatum.</a></p>
-                </div>
-            </div>
-            <p class="buttons">
-                <a href="#">Read more</a>
-                <span>OR</span>
-                <a href="#">Get started</a>
-            </p>
-        </div>
-    </main>
     <div class="visual-section-1"></div>
     <div class="visual-section-2">
         <div class="btn-big">
             <a href="#">landed</a>
         </div>
     </div>
+    <!-- <button id="calculator" class="calculator" onclick="alert('hello')">Calculator</button> -->
+    <button id="calculator" class="calculator">Calculator</button>
+    <div class="wrap modal-wrap" id="signInModal" >
+        <section class="modal" >
+            <span id="closeSignIn" class="close-window">&#9746;</span>
+            <form class="sign-in" action="">
+                <input placeholder="login" name="login" type="text">
+                <br>
+                <input placeholder="password" name="password" type="password">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <div class="parent">
+        <div class="elem d-none">
+            <main class="features-wrap">
+                <div class="features-content" id="features">
+                    <a href="#">about us</a>
+                    <h2><a href="#">Read about our app</a></h2>
+
+                    <div class="features">
+                        <div class="overview">
+                            <p class="features-icon"> <a href="#"><img src="images/heider/overview.png"
+                                        alt="Overview"></a></p>
+
+                            <h5><a href="#">Overview</a></h5>
+                            <p class="fetures-text"><a href="#">Brute laoreet efficiendi id his, ea illum nonumes
+                                    luptatum
+                                    pro.</a></p>
+                        </div>
+                        <div class="files">
+                            <p class="features-icon"><a href="#"> <img src="images/heider/Group 39.png" alt="Files"></a>
+                            </p>
+
+                            <h5><a href="#">Files</a></h5>
+                            <p class="fetures-text"><a href="#">No vim nulla vitae intellegat. Ei enim error ius, solet
+                                    atomorum
+                                    conceptam ex
+                                    has.</a>
+                            </p>
+                        </div>
+                        <div class="meeting">
+                            <p class="features-icon"><a href="#"> <img src="images/heider/Group 40.png"
+                                        alt="Meeting chats"></a>
+                            </p>
+
+                            <h5><a href="#">Meeting chats</a></h5>
+                            <p class="fetures-text"><a href="#">Vim ne tacimates neglegentur. Erat diceret omittam at
+                                    est.</a>
+                            </p>
+                        </div>
+                        <div class="save">
+                            <p class="features-icon"><a href="#"> <img src="images/heider/Group 41.png"
+                                        alt="Save events"></a>
+
+                            <h5><a href="#">Save events</a></h5>
+                            <p class="fetures-text"><a href="#">Nisl idque mel ea, nominati voluptatum.</a></p>
+                        </div>
+                    </div>
+                    <p class="buttons">
+                        <a href="#">Read more</a>
+                        <span>OR</span>
+                        <a href="#get-started">Get started</a>
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <div class="parent">
+        <div class="elem d-none">
+
+        </div>
+    </div>
+    <div class="parent">
+        <div class="elem d-none">
+            <div class="slider" id="slider">
+                <ul id="slides">
+                    <li class="slide showing"><a href="#"></a></li>
+                    <li class="slide"><a href="#"></a></li>
+                    <li class="slide"><a href="#"></a></li>
+                    <li class="slide"><a href="#"></a></li>
+                    <li class="slide"><a href="#"></a></li>
+                </ul>
+                <span id="leftToggle" class="toggle">&lt;</span>
+                <span id="rightToggle" class="toggle">&gt;</span>
+                <p id="toggleRadio" class="toggle-radio">
+                    <input type="radio" name="toggleRadio" value="0" checked>
+                    <input type="radio" name="toggleRadio" value="1">
+                    <input type="radio" name="toggleRadio" value="2">
+                    <input type="radio" name="toggleRadio" value="3">
+                    <input type="radio" name="toggleRadio" value="4">
+
+                </p>
+                <ul id="slidesMin">
+                    <li class="slide-min showing-min"><img src="./images/image1.jpg" alt="" id="0"></li>
+                    <li class="slide-min"><img src="./images/image2.jpg" alt="" id="1"></li>
+                    <li class="slide-min"><img src="./images/image3.jpg" alt="" id="2"></li>
+                    <li class="slide-min"><img src="./images/image4.jpg" alt="" id="3"></li>
+                    <li class="slide-min"><img src="./images/image5.jpg" alt="" id="4"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="ticker">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias consequuntur numquam ipsum
@@ -95,8 +158,8 @@
             ratione, nesciunt totam.
         </p>
     </div>
-    <footer class="get-started-wrap">
-        <div class="get-started">
+    <footer class="get-started-wrap" id="footer">
+        <div class="get-started" id="get-started">
             <a href="#">plan your life</a>
             <h5><a href="#">Get <b>started</b> now</a></h5>
             <p class="get-started__text"><a href="#"> Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
